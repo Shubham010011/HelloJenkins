@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Building project using Maven'
                 bat 'mvn clean package'
-                mkdir C:\Users\sharm\OneDrive\Desktop\JenkinsDeploy
+                mkdir C:\\Users\\sharm\\OneDrive\\Desktop\\JenkinsDeploy
                 copy target\\*.Jar C:\\deploy\\HelloJenkins 
             }
         }
