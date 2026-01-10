@@ -12,8 +12,8 @@ pipeline {
             steps {
                 echo 'Building project using Maven'
                 bat 'mvn clean package'
-                bat 'C:\Users\sharm\OneDrive\Desktop\JenkinsDeploy'
-                bat 'copy target\\*.jar C:\ProgramData\Jenkins\.jenkins\workspace\JenkinsDeploy\target'
+                bat 'if not exist "%USERPROFILE%\\Desktop\\JenkinsDeploy" mkdir "%USERPROFILE%\\Desktop\\JenkinsDeploy"'
+                bat 'copy target\\*.jar "%USERPROFILE%\\Desktop\\JenkinsDeploy"'
 
             }
         }
