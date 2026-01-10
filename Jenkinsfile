@@ -21,7 +21,7 @@ pipeline {
     stage('Deploy'){
         steps{
             echo 'Deploying the Application'
-            bat 'Windows command'
+            bat 'echo Application deployed successfully'
         }
     }
 }
